@@ -1,13 +1,13 @@
-DROP TABLE transactions;
-DROP TABLE tags;
-DROP TABLE merchants;
+--DROP TABLE transactions;
+--DROP TABLE merchants;
+--DROP TABLE tags;
 
-CREATE TABLE merchants (
+CREATE TABLE tags (
   id SERIAL8 PRIMARY KEY,
   name VARCHAR(255)
 );
 
-CREATE TABLE tags (
+CREATE TABLE merchants (
   id SERIAL8 PRIMARY KEY,
   name VARCHAR(255)
 );
