@@ -23,7 +23,8 @@ class Merchant
     sql = "SELECT * FROM merchants"
     values = []
     result = SqlRunner.run(sql, values)
-    return result.map { |merchant| Merchant.new(merchant)}
+    result.map { |merchant| Merchant.new(merchant)}
+    return result
   end
 
   def delete_all
