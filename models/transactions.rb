@@ -28,4 +28,10 @@ class Transaction
     result.map { |transaction| Transaction.new(transaction)}
     return result
   end
+
+  def delete_all
+    sql = "DELETE * FROM transactions"
+    values = []
+    result = SqlRunner.run(sql, values)
+  end
 end
