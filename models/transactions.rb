@@ -1,6 +1,6 @@
 require_relative('../db/sql_runner.rb')
 
-class Merchant
+class Transaction
 
   attr_reader: :id, :amount, :merchant_id, :tag_id
 
