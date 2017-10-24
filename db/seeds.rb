@@ -1,6 +1,6 @@
-require_relative(../models/transaction.rb)
-require_relative(../models/tag.rb)
-require_relative(../models/merchant.rb)
+require_relative('../models/transactions.rb')
+require_relative('../models/tag.rb')
+require_relative('../models/merchant.rb')
 require('pry')
 
 # Transaction.delete_all
@@ -44,25 +44,25 @@ merchant3 = Merchant.new({
 merchant3.save
 
 transaction1 = Transaction.new({
-  "amount" => 10
-  "merchant_id" => merchant1.id
+  "amount" => 10,
+  "merchant_id" => merchant1.id,
   "tag_id" => tag1.id
   })
 
 transaction1.save
 
 transaction2 = Transaction.new({
-  "amount" => 20
-  "merchant_id" => merchant2.id
+  "amount" => 20,
+  "merchant_id" => merchant2.id,
   "tag_id" => tag2.id
   })
 
 transaction2.save
 
 transaction3 = Transaction.new({
-  "amount" => 15
-  "merchant_id" => merchant3.id
+  "amount" => 15,
+  "merchant_id" => merchant3.id,
   "tag_id" => tag3.id
   })
-  
+
 transaction3.save
