@@ -37,8 +37,8 @@ class Transaction
     return Transaction.new(result.first)
   end
 
-  def delete_all
-    sql = "DELETE * FROM transactions"
+  def self.delete_all
+    sql = "DELETE FROM transactions"
     values = []
     result = SqlRunner.run(sql, values)
   end

@@ -1,6 +1,6 @@
---DROP TABLE transactions;
---DROP TABLE merchants;
---DROP TABLE tags;
+DROP TABLE transactions;
+DROP TABLE merchants;
+DROP TABLE tags;
 
 CREATE TABLE tags (
   id SERIAL8 PRIMARY KEY,

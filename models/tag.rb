@@ -34,8 +34,8 @@ class Tag
     return Tags.new(result.first)
   end
 
-  def delete_all
-    sql = "DELETE * FROM tags"
+  def self.delete_all
+    sql = "DELETE FROM tags"
     values = []
     result = SqlRunner.run(sql, values)
   end

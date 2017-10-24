@@ -17,3 +17,12 @@ You must be able to create new Transactions ( which should include a merchant na
 - Show a warning when the total expenditure is over budget (set a hard coded budget first)
 - Add a date to the transactions and view total spending by month
 - Any other ideas you might come up with
+
+Things I have learned/problems encountered:
+
+-usual spelling mistakes/silly errors
+-setting up files/directories in correct order and understanding how they all link to each other
+-initially forgot an obvious step to link db with tables!:
+psql -d cashboard -f cashboard.sql
+-app.rb/controller confusion. Mixing up their use and trying to run controllers.
+-attempting to rely less on referring back to previous homework
