@@ -1,4 +1,4 @@
-require_relative('../models/transactions.rb')
+require_relative('../models/transaction.rb')
 require_relative('../models/tag.rb')
 require_relative('../models/merchant.rb')
 require('pry')
@@ -66,3 +66,5 @@ transaction3 = Transaction.new({
   })
 
 transaction3.save
+
+binding.pry

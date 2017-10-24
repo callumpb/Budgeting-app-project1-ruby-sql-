@@ -22,8 +22,7 @@ class Tag
     sql = "SELECT * FROM tags"
     values = []
     result = SqlRunner.run(sql, values)
-    result.map { |tag| Tag.new(tag) }
-    return result
+    return result.map { |tag| Tag.new(tag) }
   end
 
   def self.find(id)
@@ -37,13 +36,13 @@ class Tag
   def self.delete_all
     sql = "DELETE FROM tags"
     values = []
-    result = SqlRunner.run(sql, values)
+    SqlRunner.run(sql, values)
   end
 
   def delete(id)
     sql = "DELETE * FROM tag
     WHERE id = $1"
     values = [id]
-    result = SqlRunner.run(sql, values)
+    SqlRunner.run(sql, values)
   end
 end

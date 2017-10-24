@@ -9,3 +9,10 @@ get '/transactions' do
   @transactions = Transaction.all
   erb(:"transactions/index")
 end
+
+# get '/transactions/new' do
+#   #@transactions = Transaction.all
+#   @merchants = Merchant.all
+#   @tags = Tag.all
+#   erb(:"transactions/new")
+# end
