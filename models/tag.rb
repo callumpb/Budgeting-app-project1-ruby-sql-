@@ -30,7 +30,7 @@ class Tag
     WHERE id = $1"
     values = [id]
     result = SqlRunner.run(sql, values)
-    return Tags.new(result.first)
+    return Tag.new(result.first)
   end
 
   def self.delete_all

@@ -12,7 +12,7 @@ class Transaction
   end
 
   # def transaction_total
-  #
+
   # end
 
   def save
