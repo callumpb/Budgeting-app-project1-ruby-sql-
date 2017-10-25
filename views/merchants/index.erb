@@ -1,1 +1,14 @@
-<p>merchants</p>
+<h1>Merchants</h1>
+
+<table>
+  <tr>
+    <th>Merchant id</th>
+    <th>Merchant</th>
+  </tr>
+  <% for merchant in @merchants %>
+  <tr>
+    <td><%= merchant.id %></td>
+    <td><%= merchant.name.capitalize %></td>
+  </tr>
+  <% end %>
+</table>

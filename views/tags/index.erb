@@ -1,1 +1,14 @@
-<p>tags</p>
+<h1>Tags</h1>
+
+<table>
+  <tr>
+    <th>Tag id</th>
+    <th>Tag</th>
+  </tr>
+  <% for tag in @tags %>
+  <tr>
+    <td><%= tag.id%></td>
+    <td><%= tag.name.capitalize %></td>
+  </tr>
+  <% end %>
+</table>

@@ -23,8 +23,7 @@ class Merchant
     sql = "SELECT * FROM merchants"
     values = []
     result = SqlRunner.run(sql, values)
-    result.map { |merchant| Merchant.new(merchant)}
-    return result
+    return result.map { |merchant| Merchant.new(merchant)}
   end
 
   def self.find(id)
