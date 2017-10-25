@@ -12,6 +12,17 @@ get '/transactions' do
   erb(:"transactions/index")
 end
 
+get '/transaction/new' do
+  erb(:"transactions/new")
+end
+
+post '/transactions' do
+  transaction = Transaction.new(params)
+  transaction.save
+  redirect to("/transactions/new")
+end
+
+
 # get '/merchants' do
 #   @merchants = Merchant.all
 #   erb(:"merchants/index")
