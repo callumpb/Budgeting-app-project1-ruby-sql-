@@ -26,3 +26,4 @@ Things I have learned/problems encountered:
 psql -d cashboard -f cashboard.sql
 -app.rb/controller confusion. Mixing up their use and trying to run controllers.
 -attempting to rely less on referring back to previous homework
+-The use of yield in layout file

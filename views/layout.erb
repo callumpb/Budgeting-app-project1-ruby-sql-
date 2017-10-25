@@ -2,10 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cashboard</title>
-  </head>
-  <body>
 
-    <%= yield %>
+    <title>Cashboard</title>
+
+  </head>
+
+  <body>
+    <main class="flex-direction: row;">
+      <nav>
+
+          <a href="/">Home</a>
+          <a href="/transactions">Transactions</a>
+          <a href="/tags">Tags</a>
+          <a href="/merchants">Merchants</a>
+
+      </nav>
+
+<%= yield %>
+
+    </main>
+
   </body>
 </html>
