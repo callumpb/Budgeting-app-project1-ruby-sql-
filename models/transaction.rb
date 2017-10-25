@@ -15,6 +15,7 @@ class Transaction
 
   # end
 
+
   def save
     sql = "INSERT INTO transactions
     (amount, merchant_id, tag_id)
