@@ -12,7 +12,7 @@ get '/transactions' do
   erb(:"transactions/index")
 end
 
-get '/transaction/new' do
+get '/transactions/new' do
   erb(:"transactions/new")
 end
 

@@ -1,9 +1,22 @@
 <h1> Transactions </h1>
 
-<form method="get" action="/transactions/new">
-    <button type="submit">Add transaction</button>
+<form>
+  Amount:<br>
+  <input type="text" name="amount"><br>
+
+  Tag:<br>
+  <input type="text" name="tag"><br>
+
+  Merchant:<br>
+  <input type="text" name="merchant"><br>
+
+
 </form>
 
+<form method="get" action="/transactions/new">
+    <button type="submit">Add transaction +</button>
+</form>
+<br>
 <table>
   <tr>
     <th>Transaction amount</th>
