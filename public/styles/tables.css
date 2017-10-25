@@ -19,10 +19,19 @@ table {
     border-collapse: collapse;
     margin: auto;
     width: 50%;
+    text-align: center;
+}
+
+div {
+  margin: auto;
+  display: inline-block;
 
 }
 
-body {
-  text-align: center;
+#tag-textbox {
+  margin-bottom: 5px;
+}
 
+body {
+text-align: center;
 }
