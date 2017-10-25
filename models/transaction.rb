@@ -19,14 +19,25 @@ class Transaction
     return result.first["sum"].to_f
   end
 
-  def self.total_spend_tag
+  def self.total_spend_tag(id)
     sql = "SELECT SUM(amount) AS sum
     FROM transactions
-    WHERE id = $1"
+    WHERE tag_id = $1"
     values = [id]
     result = SqlRunner.run(sql, values)
     return result.first["sum"].to_f
   end
+
+  # def self.total_spend_tag2(id)
+  #   sql = "SELECT SUM(amount) AS sum
+  #   FROM transactions
+  #   INNER JOIN tags ON tags.id = transactions.tag_id
+  #   WHERE tags.id = $1"
+  #   values = [id]
+  #   result = SqlRunner.run(sql, values)
+  #   return result.first["sum"].to_f
+  # end
+
 
   def save
     sql = "INSERT INTO transactions

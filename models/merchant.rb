@@ -34,7 +34,6 @@ class Merchant
     return Merchant.new(result.first)
   end
 
-
   def self.delete_all
     sql = "DELETE FROM merchants"
     values = []
