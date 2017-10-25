@@ -30,8 +30,7 @@ class Transaction
     sql = "SELECT * FROM transactions"
     values = []
     result = SqlRunner.run(sql, values)
-    result.map { |transaction| Transaction.new(transaction)}
-    return result
+    return result.map { |transaction| Transaction.new(transaction)}
   end
 
   def self.find(id)
