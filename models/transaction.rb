@@ -11,9 +11,13 @@ class Transaction
     @tag_id = options['tag_id'].to_i
   end
 
-  # def transaction_total
-
-  # end
+  def total_spend
+    sql = "SELECT SUM(amount) AS sum
+    FROM transactions"
+    values = []
+    result = SqlRunner.run(sql, values)
+    return result.first["sum"].to_f
+  end
 
 
   def save

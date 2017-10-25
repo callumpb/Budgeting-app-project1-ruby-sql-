@@ -1,21 +1,25 @@
 
 td, th {
   border-bottom: 1px solid #ddd;
+
 }
 
 td {
   padding: 10px;
   text-align: center;
+
 }
 
 th {
   padding: 10px;
+  text-align: center;
+
 }
 
 table {
     border-collapse: collapse;
     margin: auto;
-    width: 60%;
+    width: 50%;
 }
 
 body {
