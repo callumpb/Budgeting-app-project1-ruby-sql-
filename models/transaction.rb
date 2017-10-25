@@ -59,7 +59,8 @@ class Transaction
     WHERE id = $1"
     values = [@merchant_id]
     result = SqlRunner.run(sql, values)
-    return Merchant.new(result.first)
+    merchant_info = Merchant.new(result.first)
+    return merchant_info.name
   end
 
   def tag
@@ -67,7 +68,9 @@ class Transaction
     WHERE id = $1"
     values = [@tag_id]
     result = SqlRunner.run(sql, values)
-    return Tag.new(result.first)
+    tag_info = Tag.new(result.first)
+    return tag_info.name
+
   end
 
 end
