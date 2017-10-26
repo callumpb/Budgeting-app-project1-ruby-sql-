@@ -25,14 +25,11 @@
     <% end %>
   </tr>
 
-  <% for tag in @tags %>
   <tr>
+    <% for tag in @tags %>
     <td>£ <%= Transaction.total_spend_tag(tag.id) %></td>
-    <td>£ <%= Transaction.total_spend_tag(tag.id) %></td>
-    <td>£ <%= Transaction.total_spend_tag(tag.id) %></td>
-
+    <% end %>
   </tr>
-  <% end %>
 </table>
 <br>
 
