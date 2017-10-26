@@ -32,7 +32,7 @@ install Postgres on your machine.
 Consolidate as much of the information
 All technologies used
 Planning
-What did you think about UX? 
+What did you think about UX?
 
 
 ## Outcome
@@ -58,5 +58,3 @@ psql -d cashboard -f cashboard.sql
 -attempting to rely less on referring back to previous homework
 
 -The use of yield in layout file
-
--

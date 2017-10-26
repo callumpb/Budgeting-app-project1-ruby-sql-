@@ -23,7 +23,7 @@ post '/transactions' do
   redirect to("/transactions/new")
 end
 
-
+#THIS IS FOR FUTURE USE IF I EVER WANT TO GET MORE PRACTICE
 # get '/merchants' do
 #   @merchants = Merchant.all
 #   erb(:"merchants/index")
