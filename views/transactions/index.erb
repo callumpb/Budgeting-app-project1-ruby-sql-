@@ -1,17 +1,20 @@
 <h1> Transactions </h1>
 
 <form action="/transactions" method="get">
-  Total spent:
+  <h2>Total spent:</h2>
 
   <tr>
-    <td>£<%= @total %></td>
+    <div class="total">
+    <td>£<%= @total %></td><br>
+    </div>
+    <br>
+    <br>
   </tr>
   <label>
     <select name="tag_name" class="select">
       <% for tag in @tags %>
       <option value="<%= tag.id %>"><%= tag.name.capitalize %></option>
       <% end %>
-
     </select>
   </label>
   <input class="add_transaction" type="submit" name="submit" value="Update total spent"> <br>
@@ -21,13 +24,12 @@
 <table>
   <tr>
     <% for tag in @tags %>
-    <th><%= tag.name %></th>
+    <th><%= tag.name.capitalize %></th>
     <% end %>
   </tr>
-
   <tr>
     <% for tag in @tags %>
-    <td>£ <%= Transaction.total_spend_tag(tag.id) %></td>
+    <td>£<%= Transaction.total_spend_tag(tag.id) %></td>
     <% end %>
   </tr>
 </table>
@@ -70,7 +72,7 @@
       <% end %>
     </select>
   </label>
-  <br><br>
+  <br>
 
   <br>
   <input class="add_transaction" type="submit" name="submit" value="Add transaction"> <br>
@@ -78,8 +80,10 @@
 </form>
 
 
+
 <br>
-<table>
+<br>
+<table class="table_all">
   <tr>
     <th>Transaction amount</th>
     <th>Tag</th>
@@ -90,8 +94,8 @@
 
   <tr>
     <td>£ <%= transaction.amount %></td>
-    <td><%= transaction.merchant.capitalize %></td>
     <td><%= transaction.tag.capitalize%></td>
+    <td><%= transaction.merchant.capitalize %></td>
   </tr>
   <% end %>
 </table>

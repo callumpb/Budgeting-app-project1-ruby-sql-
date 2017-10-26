@@ -1,7 +1,17 @@
+body {
+/*text-align: center;*/
+}
+
+main {
+  width: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+
+}
 
 td, th {
   border-bottom: 1px solid #ddd;
-
 }
 
 td {
@@ -10,33 +20,36 @@ td {
 }
 
 th {
+  width: 200px;
   padding: 10px;
   text-align: center;
-
 }
 
 table {
     border-collapse: collapse;
-    margin: auto;
-    width: 50%;
-    text-align: center;
+    width: 100%;
 }
 
 div {
   margin: auto;
   display: inline-block;
+}
 
+.total {
+  font-weight:bold;
+  font-size: 25px;
 }
 
 .textbox {
   margin-bottom: 5px;
 }
 
-body {
-text-align: center;
-}
-
 .add_transaction {
   height:200px;
   width:200px;
+}
+
+.table_all {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -38,7 +38,6 @@ class Transaction
   #   return result.first["sum"].to_f
   # end
 
-
   def save
     sql = "INSERT INTO transactions
     (amount, merchant_id, tag_id)

@@ -18,12 +18,45 @@ You must be able to create new Transactions ( which should include a merchant na
 - Add a date to the transactions and view total spending by month
 - Any other ideas you might come up with
 
-Things I have learned/problems encountered:
+### Setting up
+
+‘brew install ruby’
+‘gem install sinatra sinatra-contrib’
+
+Add a list of the gems you have used.
+
+install Postgres on your machine.
+
+## Design  
+
+Consolidate as much of the information
+All technologies used
+Planning
+What did you think about UX? 
+
+
+## Outcome
+
+What do u think of your app? did you reach the goals you set yourself, Databases are well named? easy to read code?
+
+
+## Moving Forward
+
+Will you go back and work on the app again? what will you add? what new MVP will you work on
+
+## Problems encountered:
 
 -usual spelling mistakes/silly errors
--setting up files/directories in correct order and understanding how they all link to each other
+
+-setting up files/directories in correct order and understanding how they all link to each other through controllers/
+
 -initially forgot an obvious step to link db with tables!:
 psql -d cashboard -f cashboard.sql
+
 -app.rb/controller confusion. Mixing up their use and trying to run controllers.
+
 -attempting to rely less on referring back to previous homework
+
 -The use of yield in layout file
+
+-
