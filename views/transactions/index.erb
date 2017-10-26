@@ -14,7 +14,7 @@
   <label>
     <select name="tag_name" class="select">
       <% for tag in @tags %>
-      <option value="<%= tag.id %>"><%= tag.name.capitalize %></option>
+      <option value="<%= tag.id %>"><%= tag.name %></option>
       <% end %>
     </select>
   </label>
@@ -26,7 +26,7 @@
 <table>
   <tr>
     <% for tag in @tags %>
-    <th><%= tag.name.capitalize %></th>
+    <th><%= tag.name %></th>
     <% end %>
   </tr>
   <tr>
@@ -53,7 +53,7 @@
   </div><br>
     <select name="tag_id">
       <% for tag in @tags %>
-      <option value="<%= tag.id %>"><%= tag.name.capitalize %></option>
+      <option value="<%= tag.id %>"><%= tag.name %></option>
       <% end %>
     </select>
   </label>
@@ -68,7 +68,7 @@
   </div><br>
     <select name="merchant_id">
       <% for merchant in @merchants %>
-      <option value="<%= merchant.id %>"><%= merchant.name.capitalize %></option>
+      <option value="<%= merchant.id %>"><%= merchant.name %></option>
       <% end %>
     </select>
   </label>
@@ -92,8 +92,8 @@
 
   <tr>
     <td>£ <%= transaction.amount %></td>
-    <td><%= transaction.tag.capitalize%></td>
-    <td><%= transaction.merchant.capitalize %></td>
+    <td><%= transaction.tag%></td>
+    <td><%= transaction.merchant %></td>
   </tr>
   <% end %>
 </table>

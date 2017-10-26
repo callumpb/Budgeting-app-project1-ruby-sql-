@@ -6,12 +6,11 @@ class Merchant
 
   def initialize(options)
     @id = options['id'].to_i
-    @name = options['name']
+    @name = options['name'].capitalize
   end
 
   def save
-    sql =
-    "INSERT INTO merchants (name)
+    sql = "INSERT INTO merchants (name)
     VALUES ($1)
     RETURNING id"
     values = [@name]
