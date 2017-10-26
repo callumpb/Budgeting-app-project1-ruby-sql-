@@ -2,6 +2,20 @@
 
 <p> Your personal budgeting app!</p>
 
+<h2>Total spent:</h2>
+
+<form action="/transactions" method="get">
+
+
+<tr>
+  <div class="total">
+  <td>£<%= @total %></td><br>
+  </div>
+  <br>
+  <br>
+</tr>
+</form>
+
 <form method="get" action="/transactions">
     <button type="submit">Transactions</button>
 </form>
