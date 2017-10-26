@@ -45,4 +45,5 @@ class Tag
     values = [id]
     SqlRunner.run(sql, values)
   end
+
 end

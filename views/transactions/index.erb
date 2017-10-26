@@ -1,6 +1,7 @@
 <h1> Transactions </h1>
 
 <form action="/transactions" method="get">
+
   <h2>Total spent:</h2>
 
   <tr>
@@ -21,6 +22,7 @@
 </form>
 
 <h3>Total spending by tag:</h3>
+
 <table>
   <tr>
     <% for tag in @tags %>
@@ -41,7 +43,6 @@
 <form action="/transactions" method="post" >
   Amount:<br>
   <input type="text" name="amount"><br>
-
   <label>
     <br>
 
@@ -60,7 +61,6 @@
 
   <label>
 
-
   Merchant:<br>
   <div>
     <input class="textbox" placeholder="Create new merchant" type="text" name="merchant"><br>
@@ -78,8 +78,6 @@
   <input class="add_transaction" type="submit" name="submit" value="Add transaction"> <br>
 
 </form>
-
-
 
 <br>
 <br>
